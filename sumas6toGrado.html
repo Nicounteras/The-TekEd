@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Sumas 6to grado - TekEd</title>
+    <meta name="description" content="Resuelve ejercicios de (Tema 1) de una forma divertida y mejora tu rendimiento.">
+    <link rel="stylesheet" type="text/css" href="vamos.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4ce411da1.js"></script>
+    <link rel="stylesheet" href="/assets/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fontawesome.com/icons/chevron-double-down?style=duotone">
+        <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#abre0").click(function(){
+              $(".showingTheAnswer0").toggleClass("show")
+          });
+          $("#cierreCool1").click(function(){
+            $(".showingTheAnswer0").removeClass("show")
+          })
+          $("#cierreCool2").click(function(){
+            $(".showingTheAnswer1").removeClass("show")
+          })
+          $("#abre1").click(function(){
+              $(".showingTheAnswer1").toggleClass("show")
+          });
+          $("#menuResponsive").click(function(){
+              $(".responsiveNavigation").toggleClass("active")
+          });
+         $("#cierre").click(function(){
+          $(".showingTheAnswer0").removeClass("show")
+         })
+         $("#cierre2").click(function(){
+          $(".showingTheAnswer1").removeClass("show")
+         })
+         $("#n1").click(function(){
+           $(".theFirstDiv").removeClass("hide")
+           $("#n1").toggleClass("menosopaco")
+           $("#n1").toggleClass("disable")
+           $("#n2").removeClass("disable")
+           $("#n2").removeClass("menosopaco")
+           $(".the2ndDiv").toggleClass("hide")
+           $(".the3rdDiv").toggleClass("hide")
+         })
+         $("#n2").click(function(){
+          $("#n2").toggleClass("disable")
+          $("#n2").toggleClass("menosopaco")
+          $("#n1").removeClass("disable")
+          $("#n1").removeClass("menosopaco")
+          $("#n1").toggleClass("opaco")
+          $(".the2ndDiv").removeClass("hide")
+          $(".theFirstDiv").toggleClass("hide");
+         })
+
+      })
+      </script>
+</head>
+<body>
+  <nav id="navigata">
+    <a href="index.html" class="Tekito"><h1>Tek<span>Ed</span></h1></a>
+    <i class="fas fa-bars" id="menuResponsive"></i>
+</nav>
+<div class="contenido">
+    <div class="barraDemenú">
+        <h3>6to grado</h3>
+        <h5>Matemática</h5>
+        <div class="subVamos">
+          <li><a href="sumas6toGrado.html" class="active">Sumas</a></li>
+          <li><a href="restas6toGrado.html">Restas</a></li>
+          <li><a href="multiplicaciones6toGrado.html">Multiplicaciones</a></li>
+          <li><a href="divisiones6toGrado.html">Divisiones</a></li>
+          <li><a href="fracciones6toGrado.html">Fracciones</a></li>
+          <li><a href="exponenciales6toGrado.html">Exponenciales</a></li>
+        </div>
+        <div class="otherCourses">
+          <h4>Más cursos</h4>
+        <a href="#" class="nola">Español</a>
+        <a href="ingles6toGrado.html" class="ingles">Inglés</a>
+        <a href="ciencias6to.html" class="ciencias">Ciencias</a>
+        <a href="#" class="nola">Humanidades</a>
+      </div>
+    </div>
+    <div class="elMeroMero">
+        <div class="blockN1">
+            <h4 style="font-weight: 500;">Ejercicios de sumas</h4>
+            <span>¡Resuelve los ejercicios y compara tus respuestas!</span>
+            <div class="theFirstDiv">
+              <div class="bloque" id="green">
+                <div class="exDOS">
+                  <div>
+                    <p>1) 4.4 + 5.6</p>
+                  </div>
+                  <div>
+                    <p>2) 3.8 + 5.9</p>
+                  </div>
+                  <div>
+                    <p>3) 5.1 + 9.3</p>
+                  </div>
+                  <div>
+                    <p>4) 11.3 + 7.8</p>
+                  </div>
+                  <div>
+                    <p>5) 15.5 + 4.3</p>
+                  </div>
+                  <div>
+                    <p>6) 17.9 + 9.3</p>
+                  </div>
+                  <div>
+                    <p>7) 32.5 + 10.8</p>
+                  </div>
+                  <div>
+                    <p>8) 57.3 + 20.7</p>
+                  </div>
+                  <div>
+                    <p>9) 38.2 + 49.9</p>
+                  </div>
+                  <div>
+                    <p>10) 184.5 + 107.2</p>
+                  </div>
+                  <div>
+                    <p>11) 342 + 58.2</p>
+                  </div>
+                  <div>
+                    <p>12) 104.8 + 873.5</p>
+                  </div>
+                  <div>
+                    <p>13) 2037.95 + 4072.01</p>
+                  </div>
+                  <div>
+                    <p>14) 7840.7 + 900.99</p>
+                  </div>
+                  <div>
+                    <p>15) 1826.33 + 3437.6</p>
+                  </div>
+                  <article class="esfuerzo">
+                    <span>¡Vas bien crack!</span>
+                  </article>
+                </div>
+              </div>
+              <div class="twoButton">
+                <button class="showAnswers" id="abre0">Ver respuestas</button>
+                <hr style="flex: 1;">
+              </div>
+            </div>
+            <div class="the2ndDiv hide">
+              <div class="bloque">
+                <div class="sixTwo">
+                  <div>
+                    <span>1. Suma</span>
+                    <article>
+                      <p>84455+</p>
+                    <p>63420</p>
+                    <p>284128</p>
+                    <p class="underline">778292</p>
+                    </article>
+                  </div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="twoButton">
+                <button class="showAnswers" id="abre1">Ver respuestas</button>
+                <hr style="flex: 1;">
+              </div>
+            </div>
+          
+            <!-- <div id="div2" class="the2ndDiv hide">
+              <div class="bloque">
+                
+              </div>
+              <div class="twoButton">
+                <button class="showAnswers" id="abre0">Ver respuestas</button>
+                <hr style="flex: 1;">
+              </div>
+            </div> -->
+            <!--<div class="changingPage">
+              <button class="next disable" id="n1">1</button>
+              <button class="next opaco" id="n2">2</button>
+            </div>-->
+        </div> 
+    </div>
+    
+  <div class="showingTheAnswer0">
+    <div class="whiteSec big">
+      <h2>Respuestas de los ejercicios</h2> 
+      <div class="grid28">
+          <article>
+            <span>1) 10</span> 
+          </article>
+          <article>
+            <span>2) 9.7</span> 
+          </article>
+          <article>
+            <span>3) 14.4</span> 
+          </article>
+          <article>
+            <span>4) 19.1</span> 
+          </article>
+          <article>
+            <span>5) 19.8</span> 
+          </article>
+          <article>
+            <span>6) 26.1</span> 
+          </article>
+          <article>
+            <span>7) 43.3</span> 
+          </article>
+          <article>
+            <span>8) 78</span> 
+          </article>
+          <article>
+            <span>9) 88.1</span> 
+          </article>
+          <article>
+            <span>10) 291.7</span> 
+          </article>
+          <article>
+            <span>11) 400.2</span> 
+          </article>
+          <article>
+            <span>12) 978.3</span> 
+          </article>
+          <article>
+            <span>13) 6109.96</span> 
+          </article>
+          <article>
+            <span>14) 7840.7</span> 
+          </article>
+          <article>
+            <span>15) 5263.93</span>5263.93 
+          </article>
+         
+      </div>
+      <button id="cierreCool1"class="entendidoCapitán">Entendido capitán</button>
+    </div>
+    <div class="toggleClose enWhiteSecBig" id="cierre">
+      <div>
+        <div class="izquierda grande"></div>
+        <div class="derecha grande"></div>
+   </div>
+ </div>
+
+</div>
+<div class="showingTheAnswer1">
+  <div class="whiteSec">
+    <h3 class="bajaEsaVaina">Respuestas de los ejercicios</h3> 
+    <h5><span>1.</span> subVamos</h5>
+    <h5><span>1.</span> subVamos</h5>
+    <h5><span>1.</span> subVamos</h5>
+    <h5><span>1.</span> subVamos</h5>
+    <h5><span>1.</span> subVamos</h5>
+    <h5><span>1.</span> subVamos</h5>
+  </div>
+  <div class="toggleClose" id="cierre2">
+    <div>
+      <div class="izquierda"></div>
+      <div class="derecha"></div>
+ </div>
+</div>
+  </div>
+</div>
+<div class="responsiveNavigation">
+  <h3>6to grado</h3>
+  <h5>Matemática</h5>
+  <div class="subVamos">
+    <li><a href="sumas6toGrado.html" class="active">Sumas</a></li>
+    <li><a href="restas6toGrado.html">Restas</a></li>
+    <li><a href="multiplicaciones6toGrado.html">Multiplicaciones</a></li>
+    <li><a href="divisiones6toGrado.html">Divisiones</a></li>
+    <li><a href="fracciones6toGrado.html">Fracciones</a></li>
+    <li><a href="exponenciales6toGrado.html">Exponenciales</a></li>
+  </div>
+  <div class="otherGo">
+    <a href="ingles6toGrado.html" class="goToOther ingles">Ir a inglés</a>
+    <a href="ciencias6to.html" class="goToOther ciencias">Ir a ciencias</a>
+  </div>
+</div>
+    <article class="error va">
+      <h2><span class="azul">Ups</span>, no contamos con un servicio para dispositivos móviles. Para usar <span class="tek">Tek</span><span class="azul">Ed</span> necesitas una laptop o PC.</h2>
+      <i class="fas fa-laptop"></i>
+    </article>
+</body>
+</html>
