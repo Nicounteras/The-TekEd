@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Números romanos 5to grado - TekEd</title>
+    <meta name="description" content="Resuelve ejercicios de (Tema 1) de una forma divertida y mejora tu rendimiento.">
+    <link rel="stylesheet" type="text/css" href="public/jou.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4ce411da1.js"></script>
+    <link rel="stylesheet" href="/assets/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fontawesome.com/icons/chevron-double-down?style=duotone">
+        <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#abre0").click(function(){
+              $(".showingTheAnswer0").toggleClass("show")
+          });
+          $("#menuResponsive").click(function(){
+              $(".responsiveNavigation").toggleClass("active")
+          });
+          $("#cierreCool1").click(function(){
+            $(".showingTheAnswer0").removeClass("show")
+          })
+          $("#cierreCool2").click(function(){
+            $(".showingTheAnswer1").removeClass("show")
+          })
+          $("#abre1").click(function(){
+              $(".showingTheAnswer1").toggleClass("show")
+          });
+         $("#cierre").click(function(){
+          $(".showingTheAnswer0").removeClass("show")
+         })
+         $("#cierre2").click(function(){
+          $(".showingTheAnswer1").removeClass("show")
+         })
+         $("#n1").click(function(){
+           $(".theFirstDiv").removeClass("hide")
+           $("#n1").toggleClass("menosopaco")
+           $("#n1").toggleClass("disable")
+           $("#n2").removeClass("disable")
+           $("#n2").removeClass("menosopaco")
+           $(".the2ndDiv").toggleClass("hide")
+           $(".the3rdDiv").toggleClass("hide")
+         })
+         $("#n2").click(function(){
+          $("#n2").toggleClass("disable")
+          $("#n2").toggleClass("menosopaco")
+          $("#n1").removeClass("disable")
+          $("#n1").removeClass("menosopaco")
+          $("#n1").toggleClass("opaco")
+          $(".the2ndDiv").removeClass("hide")
+          $(".theFirstDiv").toggleClass("hide");
+         })
+
+      })
+      </script>
+</head>
+<body>
+  <nav id="navigata">
+    <a href="index.html" class="Tekito"><h1>Tek<span>Ed</span></h1></a>
+    <i class="fas fa-bars" id="menuResponsive"></i>
+</nav>
+<div class="contenido">
+    <div class="barraDemenú">
+        <h3>5to grado</h3>
+        <h5>Matemática</h5>
+        <div class="subVamos">
+          <li><a href="algebra5toGrado.html">Álgebra</a></li>
+          <li><a href="restas5toGrado.html">Restas</a></li>
+          <li><a href="redondeo5toGrado.html">Redondeo</a></li>
+          <li><a href="multiplicaciones5toGrado.html">Multiplicaciones</a></li>
+          <li><a href="divisiones5toGrado.html">Divisiones</a></li>
+          <li><a href="numerosRomanos5toGrado.html" class="active">N°Romanos</a></li>
+        </div>
+        <div class="otherCourses">
+          <h4>Más cursos</h4>
+        <a href="" class="nola">Español</a>
+        <a href="ingles5toGrado.html" class="ingles">Inglés</a>
+        <a href="ciencias5to.html" class="ciencias">Ciencias</a>
+        <a href="" class="nola">Humanidades</a>
+      </div>
+    </div>
+    <div class="elMeroMero">
+        <div class="blockN1">
+            <h4 style="font-weight: 500;">Números romanos</h4>
+            <span>¡Da el número provisto y compara tus respuestas!</span>
+            <div class="theFirstDiv">
+              <div class="bloque" id="green">
+                <div class="exDOS">
+                  <div>
+                    <p>1) LV</p>
+                  </div>
+                  <div>
+                    <p>2) XX</p>
+                  </div>
+                  <div>
+                    <p>3) XIX</p>
+                  </div>
+                  <div>
+                    <p>4) IV</p>
+                  </div>
+                  <div>
+                    <p>5) C</p>
+                  </div>
+                  <div>
+                    <p>6) LX</p>
+                  </div>
+                  <div>
+                    <p>7) IX</p>
+                  </div>
+                  <div>
+                    <p>8) II</p>
+                  </div>
+                  <div>
+                    <p>9) VIII</p>
+                  </div>
+                  <div>
+                    <p>10) XVI</p>
+                  </div>
+                  <div>
+                    <p>11) XV</p>
+                  </div>
+                  <div>
+                    <p>12) CL</p>
+                  </div>
+                  <div>
+                    <p>13) XC</p>
+                  </div>
+                  <div>
+                    <p>14) D</p>
+                  </div>
+                  <div>
+                    <p>15) M</p>
+                  </div>
+                  <article class="esfuerzo">
+                    <span>¡Vas bien crack!</span>
+                  </article>
+                </div>
+              </div>
+              <div class="twoButton">
+                <button class="showAnswers" id="abre0">Ver respuestas</button>
+                <hr style="flex: 1;">
+              </div>
+            </div>
+            <div class="the2ndDiv hide">
+              <div class="bloque" id="blusito">
+                <div class="exDOS">
+                  <div>
+                    <p>1. 106 = 42 + ? + 32</p>
+                  </div>
+                  <div>
+                    <p>2. 100 = 4 + ? + 32</p>
+                  </div>
+                  <div>
+                    <p>3. 500 = 320 + 2 -1 + ? + 32</p>
+                  </div>
+                  <div>
+                    <p>4. 10 = 42 + ? + 32</p>
+                  </div>
+                  <div>
+                    <p>5. 240 = 42 + ? + 32</p>
+                  </div>
+                  <div>
+                    <p>6. 120 = 41 + ? + 35</p>
+                  </div>
+                  <div>
+                    <p>7. 21 = 42 + ? + 20</p>
+                  </div>
+                  <div>
+                    <p>8. 30 = 415 + ? + 2</p>
+                  </div>
+                  <div>
+                    <p>9. 111 = 110 + ? + -1</p>
+                  </div>
+                  <div>
+                    <p>10. -2 = 42 + ? + 10</p>
+                  </div>
+                  <div>
+                    <p>11. 106 = 53 x ?</p>
+                  </div>
+                  <div>
+                    <p>12. 106 = 26.5 x ?</p>
+                  </div>
+                  <div>
+                    <p>13. 106 = 13.25 x ?</p>
+                  </div>
+                  <div>
+                    <p>14. 100 = 80 + ? + 32</p>
+                  </div>
+                  <div>
+                    <p>15. 19 = 19 x 0 + ?</p>
+                  </div>
+                  <article class="esfuerzo">
+                    <span>¡Vas bien crack!</span>
+                  </article>
+                </div>
+              </div>
+              <div class="twoButton">
+                <button class="showAnswers" id="abre1">Ver respuestas</button>
+                <hr style="flex: 1;">
+              </div>
+            </div>
+          
+            <!-- <div id="div2" class="the2ndDiv hide">
+              <div class="bloque">
+                
+              </div>
+              <div class="twoButton">
+                <button class="showAnswers" id="abre0">Ver respuestas</button>
+                <hr style="flex: 1;">
+              </div>
+            </div> -->
+            <!--<div class="changingPage">
+              <button class="next disable" id="n1">1</button>
+              <button class="next opaco" id="n2">2</button>
+            </div>-->
+        </div> 
+    </div>
+    
+  <div class="showingTheAnswer0">
+    <div class="whiteSec big">
+      <h2>Respuestas de los ejercicios</h2> 
+      <div class="grid28">
+          <article>
+            <span>1) 55</span>
+            
+          </article>
+          <article>
+            <span>2) 20</span>
+          </article>
+          <article>
+            <span>3) 19</span>
+          </article>
+          <article>
+            <span>4) 4</span>
+          </article>
+          <article>
+            <span>5) 100</span>
+          </article>
+          <article>
+            <span>6) 60</span>
+          </article>
+          <article>
+            <span>7) 9</span>
+          </article>
+          <article>
+            <span>8) 2</span>
+          </article>
+          <article>
+            <span>9) 8</span>
+          </article>
+          <article>
+            <span>10) 16</span>
+          </article>
+          <article>
+            <span>11) 15</span>
+          </article>
+          <article>
+            <span>12) 150</span>
+          </article>
+          <article>
+            <span>13) 90</span>
+          </article>
+          <article>
+            <span>14) 500</span>
+          </article>
+          <article>
+            <span>15) 1000</span>
+          </article>
+      </div>
+      <button id="cierreCool1"class="entendidoCapitán">Entendido capitán</button>
+    </div>
+    <div class="toggleClose enWhiteSecBig" id="cierre">
+      <div>
+        <div class="izquierda grande"></div>
+        <div class="derecha grande"></div>
+   </div>
+ </div>
+
+</div>
+<div class="showingTheAnswer1">
+  <div class="whiteSec big">
+    <h2>Respuestas de los ejercicios</h2> 
+    <div class="grid28">
+        <article>
+          <p><span>1. </span>32</p>
+          <p>42+32=74</p>
+          <p>106-74=32</p>
+          <p>Respuesta: 32</p>  
+        </article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+    </div>
+    <button id="cierreCool2"class="entendidoCapitán">Entendido capitán</button>
+  </div>
+  <div class="toggleClose" id="cierre2">
+    <div>
+      <div class="izquierda grande"></div>
+      <div class="derecha grande"></div>
+ </div>
+</div>
+  </div>
+</div>
+<div class="responsiveNavigation">
+  <h3>5to grado</h3>
+        <h5>Matemática</h5>
+        <div class="subVamos">
+            <li><a href="algebra5toGrado.html">Álgebra</a></li>
+            <li><a href="restas5toGrado.html">Restas</a></li>
+            <li><a href="redondeo5toGrado.html">Redondeo</a></li>
+            <li><a href="multiplicaciones5toGrado.html">Multiplicaciones</a></li>
+            <li><a href="divisiones5toGrado.html">Divisiones</a></li>
+            <li><a href="numerosRomanos5toGrado.html"class="active">N°Romanos</a></li>
+        </div>
+        <div class="otherGo">
+          <a href="ingles5toGrado.html" class="goToOther ingles">Ir a inglés</a>
+          <a href="ciencias5to.html" class="goToOther ciencias">Ir a ciencias</a>
+          <a href="personal-social5to.html" class="goToOther humanidades">Ir a Per. Social</a>  
+        </div>
+</div>
+    <article class="error va">
+      <h2><span class="azul">Ups</span>, no contamos con un servicio para dispositivos móviles. Para usar <span class="tek">Tek</span><span class="azul">Ed</span> necesitas una laptop o PC.</h2>
+      <i class="fas fa-laptop"></i>
+    </article>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Tabla Periódica | 6to grado - TekEd</title>
+    <meta name="description" content="Aprende más acerca de las adaptaciones físicas y las adaptaciones de comportamiento totalmente grátis.">
+    <link rel="stylesheet" type="text/css" href="public/jou.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4ce411da1.js"></script>
+    <link rel="stylesheet" href="/assets/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fontawesome.com/icons/chevron-double-down?style=duotone">
+        <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#abre0").click(function(){
+              $(".showingTheAnswer0").toggleClass("show")
+          });
+          $("#cierreCool1").click(function(){
+            $(".showingTheAnswer0").removeClass("show")
+          })
+          $("#cierreCool2").click(function(){
+            $(".showingTheAnswer1").removeClass("show")
+          })
+          $("#abre1").click(function(){
+              $(".showingTheAnswer1").toggleClass("show")
+          });
+         $("#cierre").click(function(){
+          $(".showingTheAnswer0").removeClass("show")
+         })
+         $("#menuResponsive").click(function(){
+              $(".responsiveNavigation").toggleClass("active")
+          });
+         $("#cierre2").click(function(){
+          $(".showingTheAnswer1").removeClass("show")
+         })
+         $("#n1").click(function(){
+           $(".theFirstDiv").removeClass("hide")
+           $("#n1").toggleClass("menosopaco")
+           $("#n1").toggleClass("disable")
+           $("#n2").removeClass("disable")
+           $("#n2").removeClass("menosopaco")
+           $(".the2ndDiv").toggleClass("hide")
+           $(".the3rdDiv").toggleClass("hide")
+         })
+         $("#n2").click(function(){
+          $("#n2").toggleClass("disable")
+          $("#n2").toggleClass("menosopaco")
+          $("#n1").removeClass("disable")
+          $("#n1").removeClass("menosopaco")
+          $("#n1").toggleClass("opaco")
+          $(".the2ndDiv").removeClass("hide")
+          $(".theFirstDiv").toggleClass("hide");
+         })
+
+      })
+      </script>
+</head>
+<body>
+  <div class="responsiveNavigation">
+    <h3>6to grado</h3>
+          <h5>Ciencias</h5>
+          <div class="subVamos">
+            <li><a href="atomos-6to.html">Átomos</a></li>
+            <li><a href="materia-6to.html">Materia</a></li>
+            <li><a href="distintos-materiales-6to.html">Dist. Materiales</a></li>
+            <li><a href="tabla-periodica-6to.html" class="active">Tabla Period.</a></li>
+        </div>
+          <div class="otherGo">
+            <a href="mate6to.html" class="goToOther m">Ir a matemática</a>
+            <a href="ingles6toGrado.html" class="goToOther ingles">Ir a inglés</a>
+          </div>
+  </div>
+  <nav id="navigata">
+    <a href="index.html" class="Tekito"><h1>Tek<span>Ed</span></h1></a>
+    <i class="fas fa-bars" id="menuResponsive"></i>
+</nav>
+<div class="contenido">
+    <div class="barraDemenú">
+        <h3>6to grado</h3>
+        <h5>Ciencia</h5>
+        <div class="subVamos">
+            <li><a href="atomos-6to.html">Átomos</a></li>
+            <li><a href="materia-6to.html">Materia</a></li>
+            <li><a href="distintos-materiales-6to.html">Dist. Materiales</a></li>
+            <li><a href="tabla-periodica-6to.html" class="active">Tabla Period.</a></li>
+      
+        </div>
+        <div class="otherCourses">
+            <h4>Más cursos</h4>
+            <a href="mate6to.html" class="m">Matemática</a>
+          <a href="" class="nola">Español</a>
+          <a href="ingles6toGrado.html" class="ingles">Inglés</a>
+          <a href="" class="nola">Humanidades</a>
+        </div>
+    </div>
+    <div class="theScience">
+            <h2>La Tabla Periódica</h2>
+            <span class="subScience">Los fundamentos de la tabla periódica, ¡conócelos!</span>
+            <div class="blogText">
+                <div class="puntosClave">
+                    <h5 class="blogS">Términos clave:</h5>
+                    <li>Número Atómico</li>
+                    <li>Masa Atómica</li>
+                    <li>Periodo</li>
+                    <li>Grupo</li>
+                    <li>Metales</li>
+                    <li>No Metales</li>
+                  </div>
+                  <h5 class="blogS">¿Qué es la tabla periódica?</h5>
+                  <p>La tabla periódica es la forma actual de disponer los elementos. En esta se ubican los 118 elementos que existen actualmente.</p>
+                    
+                    <h5 class="blogS" style="color:rgb(50,50,50); font-size:18px;margin-top:35px;">Número atómico</h5>
+              <p>El número atómico es la cantidad de protones que contiene un elemento. Este es representado por la letra Z. 
+                Masa atómico
+                La masa atómica es la cantidad de núclidos que contiene el elemento. Un nuclido es basicamente la suma de neutrones y protones. La masa atómica es representada por la letra A.
+                </p>
+                <h5 class="blogS" style="color:rgb(50,50,50); font-size:18px;margin-top:35px;">Organización de la tabla periódica</h5>
+              <p>La tabla periódica es organizada por el número atómico. Esta empieza con el hidrógeno (1) y termina con el Oganesón(118). Además esta se divide en periodos y grupos:</p>
+              <div class="liDelLi">
+                <li>Periodo: Son las filas horizontales de la tabla periódica. El número atómico avanza de derecha a izquierda</li>
+                <li>Grupo: Son las columnas verticales de la tabla periódica. El número atómico aumenta de arriba hacia abajo</li>
+               </div>
+               <h5 class="blogS" style="color:rgb(50,50,50); font-size:18px;margin-top:35px;">Metales, No metales y Metaloides</h5>
+               <p>Los elementos también se pueden dividir de acuerdo a si estos son metales, no metales y metaloides. Cada uno de estos poseen diferentes característica.</p>
+               <div class="liDelLi">
+                <li>Metales: Tienden a perder electrones, son buenos conductores de electricidad, etc.</li>
+               <li>No metales: Tienden a ganar electrónicas, no conducen electricidad, etc.</li>
+               <li>Metaloides: Pueden perder o ganar electrones, pueden conducir la electricidad, etc. </li>
+               </div>
+                    <div class="autor" style="margin-top: 30px;">
+                      <span class="by">Escrito por:</span> <span class="nameOf">Vincenzo Ybazeta</span> <span class="dateOf">(13/06/2020)</span>
+                    </div>
+                  </div>
+            
+            </div>
+</body>
+</html>
