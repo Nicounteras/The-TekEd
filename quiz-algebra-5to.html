@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de álgebra para 5to Grado de Primaria</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navigata">
+    <a href="index.html" class="tk">Tek<span>Ed</span></a>
+    <div style="flex:1"></div>
+    <a href="algebra5toGrado.html" class="verEx">Ejercicios de práctica</a>
+</nav>
+<div id="container">
+    <div id="start">¡Inicia el quiz!</div>
+    <div id="quiz" style="display: none">
+        <div id="question"></div>
+
+        <div id="choices">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+        </div>
+        <div id="timer">
+            <div id="counter"></div>
+            <div id="btimeGauge"></div>
+            <div id="timeGauge"></div>
+        </div>
+        <div id="progress"></div>
+    </div>
+</div>
+<div id="scoreContainer" style="display: none"></div>
+<script>
+    // select all elements
+const start = document.getElementById("start");
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+const counter = document.getElementById("counter");
+const timeGauge = document.getElementById("timeGauge");
+const reStartQuiz = document.querySelector(".startAgain")
+const progress = document.getElementById("progress");
+const scoreDiv = document.getElementById("scoreContainer");
+
+// create our questions
+let questions = [
+    {
+        question : "50 * X = 150",
+        choiceA : "3",
+        choiceB : "5",
+        choiceC : "150",
+        correct : "A"
+    },{
+        question : "40 + X = 128",
+    
+        choiceA : "98",
+        choiceB : "88",
+        choiceC : "78",
+        correct : "B"
+    },{
+        question : "X * X = 16",
+        choiceA : "15",
+        choiceB : "25",
+        choiceC : "4",
+        correct : "C"
+    }
+    ,{
+        question : "X * X = 144",
+        choiceA : "10",
+        choiceB : "13",
+        choiceC : "12",
+        correct : "C"
+    }
+    ,{
+        question : "5 * 4 + X = 21",
+        choiceA : "2",
+        choiceB : "20",
+        choiceC : "1",
+        correct : "C"
+    }
+    ,{
+        question : "3 * 5 + X = 19",
+        choiceA : "4",
+        choiceB : "5",
+        choiceC : "3",
+        correct : "A"
+    }
+    ,{
+        question : "6 / 2 + X = 6",
+        choiceA : "2",
+        choiceB : "4",
+        choiceC : "3",
+        correct : "C"
+    }
+    ,{
+        question : "10 * X = 210",
+        choiceA : "20",
+        choiceB : "21",
+        choiceC : "22",
+        correct : "B"
+    }
+];
+
+// create some variables
+
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+const questionTime = 60; // 10s
+const gaugeWidth = 150; // 150px
+const gaugeUnit = gaugeWidth / questionTime;
+let TIMER;
+let score = 0;
+
+// render a question
+function renderQuestion(){
+    let q = questions[runningQuestion];
+    
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+}
+
+start.addEventListener("click",startQuiz);
+
+// start quiz
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderProgress();
+    renderCounter();
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+}
+
+// render progress
+function renderProgress(){
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
+        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+    }
+}
+
+// counter render
+
+function renderCounter(){
+    if(count <= questionTime){
+        counter.innerHTML = count;
+        timeGauge.style.width = count * gaugeUnit + "px";
+        count++
+    }else{
+        count = 0;
+        // change progress color to red
+        answerIsWrong();
+        if(runningQuestion < lastQuestion){
+            runningQuestion++;
+            renderQuestion();
+        }else{
+            // end the quiz and show the score
+            clearInterval(TIMER);
+            scoreRender();
+        }
+    }
+}
+
+// checkAnwer
+
+function checkAnswer(answer){
+    if( answer == questions[runningQuestion].correct){
+        // answer is correct
+        score++;
+        // change progress color to green
+        answerIsCorrect();
+    }else{
+        // answer is wrong
+        // change progress color to red
+        answerIsWrong();
+    }
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
+    }else{
+        // end the quiz and show the score
+        clearInterval(TIMER);
+        scoreRender();
+    }
+}
+
+// answer is correct
+function answerIsCorrect(){
+    document.getElementById(runningQuestion).style.backgroundColor = "rgb(84, 236, 56)";
+}
+
+// answer is Wrong
+function answerIsWrong(){
+    document.getElementById(runningQuestion).style.backgroundColor = "rgb(232,0,0)";
+}
+
+// score render
+function scoreRender(){
+   setTimeout(function(){
+      scoreDiv.style.display = "flex";
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score/questions.length);
+    
+    scoreDiv.innerHTML += "<p> Tu score fue de "+ scorePerCent +"%</p>" + "<button class='startAgain' onclick='reStartTheQuiz()'>Reinicia el quiz</button>"; 
+   }, 300)
+}
+function reStartTheQuiz(){
+  location.reload();
+}
+</script>
+</body>
+</html>

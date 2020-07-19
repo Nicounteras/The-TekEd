@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none
+}
+body{
+    font-size: 20px;
+    font-family: "Fredoka one", cursive
+}
+ #navigata{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 55px;
+    font-family: "Fredoka one", cursive;
+    padding: 10px 5%; 
+   background: rgb(50, 50, 50)
+  }
+   .verEx{
+          position:fixed;
+          top:18px;
+          font-size:17px;
+          font-family:"Fredoka one", serif;
+          right:4vw;
+          color:rgb(240,240,240);
+        }
+        .verEx::after{
+          content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: rgb(11,125,179);
+      transition: width .3s;
+        }
+        .verEx:hover::after{
+      width: 100%;
+      transition: width .3s;
+  }
+  .tk{
+    font-size: 28px;
+    margin: 0;
+     font-family: "Fredoka one", cursive;
+    padding: 0;
+    font-weight: 500;
+    color: rgb(240,240,240)
+  }
+  #navigata h1{
+    margin: 0;
+  }
+  .tk span{
+    color: rgb(11,125,179);
+     font-size: 28px;
+    margin: 0;
+     font-family: "Fredoka one", cursive;
+    padding: 0;
+    font-weight: 500;
+  }
+#container{
+    background-color: white;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+   border: 2px solid rgb(11,125,179);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%)
+}
+#start{
+    font-size: 1.5em;
+    padding: 10px;
+    margin: auto;
+    width: 300px;
+    height: 65px;
+    position: relative;
+    top: 100px;
+    border : 2px solid rgb(46, 46, 46);
+    text-align: center;
+    cursor: pointer;
+    color : rgb(46, 46, 46);
+}
+#start:hover{
+    border: 2px solid rgb(117, 11, 179);
+    color : rgb(117, 11, 179);
+}
+
+#qImg{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question{
+    width:100%;
+    padding: 10px 0;
+    text-align: center
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+#choices{
+  text-align: center;
+    width : 100%;
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timer{
+  
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#counter{
+    font-size: 3em;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: rgb(49, 175, 37);
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.startAgain{
+  border: none;
+  background-color: rgb(117, 11, 179);
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Fredoka one", cursive;
+  position: relative;
+  top: 20px;
+  padding: 10px;
+  color: rgb(240,240,240);
+}
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainer{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    height: 300px;
+    background-color: rgb(50, 50, 50);
+    transform: translate(-50%,-50%);
+}
+#scoreContainer p{
+    color: rgb(240,240,240);
+    font-size: 1.5em;
+    text-align: center;
+}
+/* Responsive design */
+@media screen and (max-width:750px){
+  #container{
+    width: 80vw;
+  }
+  #start{
+    font-size: 1.3em;
+    width: 78vw;
+    height: auto;
+  }
+  #counter{
+    font-size: 2em;
+  }
+  #timer{
+    position: absolute;
+    bottom: -110px;
+    left: 40vw;
+    transform: translate(-50%, 0);
+  }
+}

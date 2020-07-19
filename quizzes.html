@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168018621-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168018621-1');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="oAakXrC_Cl0SQK1dD2jgd14W3fdlV4z5qoWnabUl4QU" />
+    <title>Quizzes divertidos | TekEd</title>
+    <meta name="description" content="¡Potencia tu aprendizaje con increíbles ejercicios de matemática e inglés! 100% GRATUITO."/>
+    <meta name="keywords" content="TekEd, Education, Educación">
+    <meta name=”robots” content=”noindex, nofollow”>
+    <meta name="copyright" content="Teked™" />
+    <link rel="stylesheet" type="text/css" href="vamos.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="public/jou.css" media="screen"/>
+    <script src="https://kit.fontawesome.com/f4ce411da1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <link rel="stylesheet" href="https://fontawesome.com/icons/chevron-double-down?style=duotone">
+        <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#theNewResp").click(function(){
+                $(".respNav").toggleClass("active")
+            })
+            $("#enN1").click(function(){
+                $(".extremeN1").toggleClass("vamos")
+            })
+            $("#toggleClosing1").click(function(){
+                $(".extremeN1").removeClass("vamos")
+            })
+            $("#enN2").click(function(){
+                $(".extremeN2").toggleClass("vamos")
+            })
+            $("#toggleClosing2").click(function(){
+                $(".extremeN2").removeClass("vamos")
+            })
+        })
+    
+        </script>
+        <style>
+            #cajacookies{
+                box-shadow: 0px 0px 5px 2px #808080;
+    background-color: rgb(50,50,50);
+    color: rgb(230,230,230);
+    padding: 15px;
+    z-index: 50;
+    text-align: center;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 0px;
+    font-family: "Fredoka one", serif;
+    width: 100vw;
+            }
+            .pull-right {
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: "Fredoka one", serif;
+    margin-left: 10px;
+    padding: 3px 5px;
+    transition: .5s;
+    color: rgb(230,230,230);
+    background-color: rgb(11,125,179);
+}
+.pull-right:hover{
+    background-color: rgb(12, 134, 190);
+}
+        </style>
+      <!--
+          <script>
+            /* ésto comprueba la localStorage si ya tiene la variable guardada */
+            function compruebaAceptaCookies() {
+              if(localStorage.aceptaCookies == 'true'){
+                cajacookies.style.display = 'none';
+              }
+            }
+            
+            /* aquí guardamos la variable de que se ha
+            aceptado el uso de cookies así no mostraremos
+            el mensaje de nuevo */
+            function aceptarCookies() {
+              localStorage.aceptaCookies = 'true';
+              cajacookies.style.display = 'none';
+            }
+            
+            /* ésto se ejecuta cuando la web está cargada */
+            $(document).ready(function () {
+              compruebaAceptaCookies();
+            });
+            </script>
+      -->  
+            <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="index.js"></script>
+</head>
+<body>
+        <nav id="inicio" style="position: fixed; z-index: 3;">
+            <a href="index.html" class="Tekito"><h1 style="font-weight: 500;">Tek<span>Ed</span></h1></a>
+            <i class="fas fa-bars" id="theNewResp" style="cursor: pointer;"></i>
+        </nav>
+        <div class="initialOfQuizzes">
+          <h3>Quizzes<span class="teked">Tek<span>Ed</span></span></h3>
+          <h5>Para comenzar, da un click en tu grado</h5>
+          <div class="buttonDiv">
+           <a href="quizzes-5to.html"> <button class="eli q" id="enN1"><h1 style="font-family: Fredoka one, serif; font-weight: 500;">5to<span style="margin-left: 5px;">de primaria</span></h1></button></a>
+          <a href="quizzes-6to.html"><button class="eli w" id="enN2"><h1 style="font-family: Fredoka one, serif; font-weight: 500;">6to<span style="margin-left: 5px;">de primaria</span></h1></button></a>
+        </div>
+        </div>
+        
+</body>
+</html>

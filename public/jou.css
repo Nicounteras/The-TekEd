@@ -912,13 +912,83 @@ font-size: 30px;
     margin: 0;
     padding: 0;
 }
+.w{
+background: linear-gradient(90deg, rgba(7,179,174,1), rgba(9,9,121,1));
+transition-duration: 2s;
+}
+.buttonDiv a button, .quizzes3 a button{
+    width: 100%;
+    height: 100%;
+}
+.quizzes3 button{
+    font-size: 25px;
+    font-family: "Fredoka one", cursive;
+}
+.quiMate{
+    background: rgb(226,21,21);
+background: linear-gradient(90deg, rgba(226,21,21,1) 28%, rgba(253,104,29,1) 100%);
+}
+.quiIngles{
+    background: rgb(226,21,194);
+background: linear-gradient(90deg, rgba(226,21,194,1) 28%, rgba(111,29,253,1) 100%);
+}
+.quiHuma{
+    background: rgb(5,116,187);
+background: linear-gradient(90deg, rgba(5,116,187,1) 8%, rgba(4,5,158,1) 63%);
+}
+.quiCiencia{
+    background: rgb(149,187,5);
+    background: linear-gradient(90deg, rgba(149,187,5,1) 15%, rgba(10,158,4,1) 64%, rgba(10,158,4,1) 93%);
+}
+.eli a{
+    color: rgb(230, 230, 230);
+}
+.q{
+    background: rgb(253,29,29);
+background: linear-gradient(90deg, rgba(253,29,29,1) 40%, rgba(210,26,98,1) 100%);
+}
+.quizzes3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 180px;
+    grid-gap: 10px;
+    margin-top: 40px;
+}
+@media screen and (max-width: 600px){
+    .quizzes3{
+        height: 450px;
+        padding: 0 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
 #blusito{
     height: 480px;
+}
+.initialOfQuizzes{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: "Fredoka one", cursive;
+    font-weight: 500;
+    padding:85px 5vw 20px 5vw;
+}
+.initialOfQuizzes h3{
+    font-size: 34px;
+    font-weight: 500;
+    color: rgb(40, 40, 40);
+}
+.initialOfQuizzes h5{
+    color: rgb(40, 40, 40);
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
 }
 .barraDemenú h5{
     padding: 0;
     font-size: 17px;
     padding-left: 3px;
+    font-weight: 500;
     margin: 0;
     font-family: "Fredoka one", cursive;
 }
@@ -1164,6 +1234,7 @@ font-size: 30px;
 .showAnswers{
     background-color: rgb(235, 129, 8);
     border: none;
+    font-family: "Fredoka one", cursive;
     padding: 7px 12px;
     color: rgb(230,230,230);
     border-radius: 6px;
@@ -1385,12 +1456,14 @@ hr{
     padding: 5px;
 }
 .esfuerzo{
-    background-color: rgb(21, 31, 39);
+    background-color: rgb(14, 110, 155);
     color: rgb(230, 230, 230);
+    border-top-left-radius: 5px;
+    font-family: "Fredoka one", cursive;
     text-align: center;
     align-content: center;
     font-size: 20px;
-    padding: 13px 0 0 0;
+    padding: 15px 0 0 0;
 }
 .esfuerzo span{
     text-align: center;
@@ -1461,13 +1534,15 @@ hr{
 main{
     width: 100%;
     height: 100%;
-    background-color: rgb(21, 31, 39);
+    background-color: rgb(11,125,179);
     color: rgb(230,230,230);
+    font-family: "Fredoka one", cursive;
+    border-top-left-radius: 5px;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    padding-top: 16px;
+    padding-top: 18px;
 }
 #menuResponsive{
     display: none;
@@ -1500,6 +1575,7 @@ main{
 }
 .responsiveNavigation h5{
     font-size: 16px;
+    font-weight: 600;
 }
 .pepitoJuarez{
     display: none;
@@ -1576,7 +1652,7 @@ main{
 }
 .eli:hover{
     opacity: 1;
-    transition: .5s;
+    transition: 1s;
 }
 .eli h1::after{
     content: "";
@@ -1586,10 +1662,20 @@ main{
     background-color: rgb(11,125,179);
     transition: width .3s;
 }
+.doExam{
+    background-color: rgb(113, 36, 165);
+    color: rgb(250,250,250);
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "Fredoka one", cursive;
+}
 .x{
     background-color: rgb(190, 33, 12);
 }
-.w{
+.qw{
     background-color: rgb(113, 36, 165);
 }
 .buttonDiv button h1{
